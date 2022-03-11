@@ -1,7 +1,14 @@
 import path from 'path'
 import execa from 'execa'
 
-const codemods = [`gatsby-plugin-image`, `global-graphql-calls`, `import-link`, `navigate-calls`, `rename-bound-action-creators`]
+const codemods = [
+  `gatsby-source-contentful`,
+  `gatsby-plugin-image`,
+  `global-graphql-calls`,
+  `import-link`,
+  `navigate-calls`,
+  `rename-bound-action-creators`,
+]
 
 export const transformerDirectory = path.join(__dirname, '../', 'transforms')
 export const jscodeshiftExecutable = require.resolve('.bin/jscodeshift')
